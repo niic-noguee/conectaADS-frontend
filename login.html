@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="src/css/login.css">
-    <title>ConectaADS | Login </title>
+    <title>ConectaADS | Login</title>
 </head>
-
 <body>
-
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form>
@@ -26,6 +23,7 @@
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <button>Cadastrar</button>
+                <div id="signup-feedback" class="feedback-message"></div> 
             </form>
         </div>
         <div class="form-container sign-in">
@@ -42,6 +40,7 @@
                 <input type="password" placeholder="Password">
                 <a href="#">Esqueceu sua senha?</a>
                 <button>Entrar</button>
+                <div id="signin-feedback" class="feedback-message"></div> 
             </form>
         </div>
         <div class="toggle-container">
@@ -59,8 +58,7 @@
             </div>
         </div>
     </div>
-
     <script src="src/js/login.js"></script>
+    <script src="src/js/login-handler.js" type="module"></script>
 </body>
-
 </html>

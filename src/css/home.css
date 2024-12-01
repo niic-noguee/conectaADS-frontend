@@ -270,7 +270,7 @@ nav {
 }
 
 .about {
-  background-image: url("assets/bg.jpeg");
+  background-image: url("../../assets/bg.jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -143,6 +143,18 @@ body{
     height: 40px;
 }
 
+.feedback-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff0000; /* Cor padrão para erros */
+    text-align: center;
+    display: none; /* Ocultar por padrão */
+}
+
+.feedback-message.success {
+    color: #28a745; /* Cor verde para sucesso */
+}
+
 .toggle-container{
     position: absolute;
     top: 0;
