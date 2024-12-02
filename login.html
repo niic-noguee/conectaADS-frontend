@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container" id="container">
+        <!-- Formulário de Cadastro -->
         <div class="form-container sign-up">
             <form>
                 <h1>Criar conta</h1>
@@ -21,11 +22,16 @@
                 <span>ou use seu email para se registrar</span>
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <div class="password-field">
+                    <input type="password" placeholder="Password" id="signup-password">
+                    <i class="fa-solid fa-eye toggle-password" data-target="signup-password"></i>
+                </div>
                 <button>Cadastrar</button>
-                <div id="signup-feedback" class="feedback-message"></div> 
+                <div id="signup-feedback" class="feedback-message"></div>
             </form>
         </div>
+
+        <!-- Formulário de Login -->
         <div class="form-container sign-in">
             <form>
                 <h1>Entrar</h1>
@@ -37,12 +43,17 @@
                 </div>
                 <span>ou use seu email e senha</span>
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <div class="password-field">
+                    <input type="password" placeholder="Password" id="signin-password">
+                    <i class="fa-solid fa-eye toggle-password" data-target="signin-password"></i>
+                </div>
                 <a href="#">Esqueceu sua senha?</a>
                 <button>Entrar</button>
-                <div id="signin-feedback" class="feedback-message"></div> 
+                <div id="signin-feedback" class="feedback-message"></div>
             </form>
         </div>
+
+        <!-- Alternador de Formulários -->
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
@@ -58,6 +69,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Scripts -->
     <script src="src/js/login.js"></script>
     <script src="src/js/login-handler.js" type="module"></script>
 </body>

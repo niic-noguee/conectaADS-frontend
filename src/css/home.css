@@ -270,7 +270,7 @@ nav {
 }
 
 .about {
-  background-image: url("../../assets/bg.jpeg");
+  background-image: url("../../assets/home/steps-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -527,16 +527,11 @@ nav {
   background-color: var(--primary-color-dark);
 }
 
-
-
-
 .swiper {
   padding-top: 4rem;
   width: 100%;
   max-width: 600px;
 }
-
-
 
 .footer__container {
   display: grid;
@@ -595,8 +590,6 @@ nav {
   .events__grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  
 
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
