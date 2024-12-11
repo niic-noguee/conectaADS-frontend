@@ -1,0 +1,7 @@
+# Ignore pastas
+node_modules/
+.parcel-cache/
+dist/
+
+# Ignore arquivos
+package-lock.json
