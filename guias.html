@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="src/css/home.css">
     <title>Guias - ConectaADS</title>
     <meta name="description" content="Explore guias úteis e dicas práticas para a sua jornada em tecnologia e desenvolvimento no ConectaADS.">
+    <script>
+      // Verifica se o usuário está autenticado
+      const token = localStorage.getItem("token");
+    
+      if (!token) {
+        alert("Você precisa estar logado para acessar esta página.");
+        window.location.href = "/login.html"; // Redireciona para a página de login
+      }
+    </script>    
 </head>
 <body>
     <!-- Navegação -->
